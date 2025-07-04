@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body style="background-color: black; color:#fff;">
+    <ul class="list">
+        <li>c++</li>
+    </ul>
+    
+</body>
+<script>
+    // ADD A LIST ITEM
+    function add(lang) {
+        const ele = document.createElement('li')
+        ele.innerHTML = `${lang}`
+        // ele.appendChild(document.createTextNode(lang))
+        const select = document.querySelector('ul')
+        select.appendChild(ele)
+
+    }
+    add('javaScript')
+
+
+    // SELECT A LIST ITEM AND CHANGE THAT VALUE
+    // const second = document.querySelector('li:nth-child(2)')
+    // second.innerHTML = 'python'
+    
+    // const newLi= document.createElement('li')
+    // newLi.textContent = 'python'
+    // second.replaceWith(newLi)
+
+
+    // EDIT METHOD
+    // const first = document.querySelector('li:first-child')
+    // first.outerHTML = '<li>java</li>'
+
+   
+
+    // REMOVE METHOD
+    const last = document.querySelector('li:last-child')
+    last.remove()
+
+
+
+
+    
+
+    
+    
+</script>
+</html>
